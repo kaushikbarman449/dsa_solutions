@@ -33,14 +33,6 @@ This repo will track my progress, code, notes, and patterns.
 
 ---
 
-## Deliverables
-- `python/` — solution code.
-- `python/templates.py` — reusable code templates.
-- `notes/` — explanations, key patterns.
-- `tracker.csv` — log of every problem solved (date, topic, status, notes).
-
----
-
 ## Commitment
 This is non-negotiable.  
 I will **show up every single day** and build the skills that will make me unshakable in computer science.  
