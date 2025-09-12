@@ -1,7 +1,7 @@
 # selection sort
 
 def selection_sort(sortList):
-    for j in range(len(sortList)):
+    for j in range(len(sortList)-1):
         smallestElement = j
         for i in range(j+1, len(sortList)):
             if sortList[i] < sortList[smallestElement]:
