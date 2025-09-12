@@ -1,9 +1,5 @@
 # selection sort
 
-def swapValues(first, second):
-    return second, first
-
-
 def selection_sort(sortList):
     for j in range(len(sortList)):
         smallestElement = j
@@ -12,8 +8,7 @@ def selection_sort(sortList):
                 smallestElement = i
 
         if smallestElement != j:
-            sortList[j], sortList[smallestElement] = swapValues(
-                sortList[j], sortList[smallestElement])
+            sortList[j], sortList[smallestElement] = sortList[smallestElement], sortList[j]
 
     return sortList
 
