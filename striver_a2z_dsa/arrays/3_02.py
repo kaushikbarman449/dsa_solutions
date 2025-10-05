@@ -5,10 +5,12 @@ def getSecLargest(nums):
     largest_num = float('-inf')
     sec_largest_num = float('-inf')
 
-    for i in range(len(nums)):
-        if nums[i] > largest_num:
+    for num in nums:
+        if num > largest_num:
             sec_largest_num = largest_num
-            largest_num = nums[i]
+            largest_num = num
+        elif num > sec_largest_num and num < largest_num:
+            sec_largest_num = num
 
     return sec_largest_num
 
@@ -26,6 +28,6 @@ def getSecSmallest(nums):
 
 
 if __name__ == "__main__":
-    list_values = [13, 46, 24, 52, 20, 9, -1, -10, 32, 32, 100]
+    list_values = [13, 46, 24, 52, 20, 9, -1, -10, 32, 32, 100, 123, 112]
     print("Second Largest Element respectively", getSecLargest(list_values))
     print("Second Smallest Element respectively", getSecSmallest(list_values))
