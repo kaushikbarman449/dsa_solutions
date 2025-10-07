@@ -1,6 +1,6 @@
-# DSA Mastery Plan (Python)
+# DSA Plan (Python)
 
-I, Kaushik, commit to mastering Data Structures and Algorithms in Python.  
+Commit to learning Data Structures and Algorithms in Python.  
 This repo will track my progress, code, notes, and patterns.
 
 ---
@@ -28,11 +28,7 @@ This repo will track my progress, code, notes, and patterns.
 ## Daily Routine
 - Warm-up: 2–3 easy problems.
 - Core session: 1 medium/hard problem (plan → code → test).
-- Learn: 30–45m reading/watching theory (CLRS, MIT, notes).
+- Learn: 30–45m reading/watching theory (Striver, Abdul Bari)
 - Review: update tracker, Anki cards, re-solve yesterday’s tricky problem.
 
----
-
-## Commitment
-This is non-negotiable.  
-I will **show up every single day** and build the skills that will make me unshakable in computer science.  
+--- 
