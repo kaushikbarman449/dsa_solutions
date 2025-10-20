@@ -1,4 +1,4 @@
-# Longest Subarray with given Sum K(Positives)
+# Longest Subarray with given Sum K(Positives and negatives)
 def longest_subArray_O3(nums, sum_k):
     subArray_len = 0
     for i in range(len(nums)):
