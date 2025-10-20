@@ -25,7 +25,7 @@ def longest_subArray_O2(nums, sum_k):
 
 
 def longest_subArray_On(nums, sum_k):
-    prefix_map = {}
+    prefix_dict = {}
     prefix_sum = 0
     max_len = 0
 
@@ -35,11 +35,11 @@ def longest_subArray_On(nums, sum_k):
         if prefix_sum == sum_k:
             max_len = i + 1
 
-        if (prefix_sum - sum_k) in prefix_map:
-            max_len = max(max_len, i - prefix_map[prefix_sum - sum_k])
+        if (prefix_sum - sum_k) in prefix_dict:
+            max_len = max(max_len, i - prefix_dict[prefix_sum - sum_k])
 
-        if prefix_sum not in prefix_map:
-            prefix_map[prefix_sum] = i
+        if prefix_sum not in prefix_dict:
+            prefix_dict[prefix_sum] = i
 
     return max_len
 
