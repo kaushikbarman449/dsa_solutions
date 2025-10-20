@@ -44,6 +44,25 @@ def longest_subArray_On(nums, sum_k):
     return max_len
 
 
+# This function uses two pointer approach, optimal for Positives and Zeroes only
+
+def longest_subArray_On_two_pointers(nums, sum_k):
+    current_sum = 0
+    left = 0
+    max_len = 0
+    for right in range(len(nums)):
+        current_sum += nums[right]
+
+        while current_sum > sum_k:
+            current_sum -= nums[left]
+            left += 1
+
+        if current_sum == sum_k:
+            max_len = max(max_len, right - left + 1)
+
+    return max_len
+
+
 if __name__ == "__main__":
     sum_k = int(input("Enter k: "))
     list_values = [2, 3, 9, 5, 1, 3, 1, 9, 0, 0, 0, 0]
@@ -52,4 +71,6 @@ if __name__ == "__main__":
     print(f"Length of longest subarray with {sum_k} in O(2):", longest_subArray_O2(
         list_values, sum_k))
     print(f"Length of longest subarray with {sum_k} in O(n):", longest_subArray_On(
+        list_values, sum_k))
+    print(f"Length of longest subarray with {sum_k} in O(n) using two pointers:", longest_subArray_On_two_pointers(
         list_values, sum_k))
