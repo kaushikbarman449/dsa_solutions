@@ -26,7 +26,7 @@ def longest_subArray_O2(nums, sum_k):
 
 if __name__ == "__main__":
     sum_k = int(input("Enter k: "))
-    list_values = [2, 3, 9, 5, 1, 3, 1, 9]
+    list_values = [2, 3, 9, 5, 1, 3, 1, 9, 0, 0, 0, 0]
     print(f"Length of longest subarray with {sum_k} in O(3):", longest_subArray_O3(
         list_values, sum_k))
     print(f"Length of longest subarray with {sum_k} in O(2):", longest_subArray_O2(
