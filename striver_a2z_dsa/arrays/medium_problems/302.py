@@ -23,7 +23,25 @@ def after_sort(nums):
     return nums
 
 
+def sort_using_dutch_National_flag_algorithm(nums):
+    low, mid, high = 0, 0, len(nums) - 1
+    while mid <= high:
+        if nums[mid] == 0:
+            nums[low], nums[mid] = nums[mid], nums[low]
+            low += 1
+            mid += 1
+        elif nums[mid] == 1:
+            mid += 1
+        else:
+            nums[mid], nums[high] = nums[high], nums[mid]
+            high -= 1
+
+    return nums
+
+
 if __name__ == "__main__":
     nums = [0, 2, 1, 2, 0, 0, 2, 1]
     print(f"Original list: {nums}")
     print(f"After sorting: {after_sort(nums)}")
+    print(
+        f"Sorting using Dutch National flag algorithm: {sort_using_dutch_National_flag_algorithm(nums)}")
